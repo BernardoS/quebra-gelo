@@ -1,2 +1,2 @@
-# quebra-gelo
- Uma aplicação simples para praticar um pouco de react
+![Capa do projeto](/public/Capa.png)
+# Quebra Gelo 
