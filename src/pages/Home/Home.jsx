@@ -6,9 +6,9 @@ import {
     HomeMascotImage,
     HomeSpan,
     HomeButtons,
-    HomeFooter,
     HomeContainer
 } from "./styles";
+import Footer from "../../components/PrimaryFooter/PrimaryFooter";
 import Logo from "../../assets/logo.svg";
 import MascotBlue from "../../assets/mascot-blue.svg";
 import PrimaryButton from "../../components/PrimaryButton/PrimaryButton";
@@ -17,10 +17,12 @@ import {
     StickyNote02Icon,
     Idea01Icon 
  } from "hugeicons-react";
-
-
+import { useNavigate } from "react-router-dom";
 
 const HomePage = () => {
+
+    const navigate = useNavigate();
+
     return (
         <HomeContainer>
             <HeaderHome>
@@ -36,15 +38,15 @@ const HomePage = () => {
                         Puxar Assunto
                     </PrimaryButton>
                     <HomeSpan> ou </HomeSpan>
-                    <SecondaryButton type="button">
+                    <SecondaryButton onClick={() => navigate("/temas")} type="button">
                         <StickyNote02Icon strokeWidth={2} stroke="2"/>
                         Escolher Tema
                     </SecondaryButton>
                 </HomeButtons>
             </HomeBody>
-            <HomeFooter>
+            <Footer>
                 <a href="https://github.com/BernardoS">Developed by BernardoS</a>
-            </HomeFooter>
+            </Footer>
         </HomeContainer>
 
 

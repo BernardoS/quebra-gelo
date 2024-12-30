@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import HeaderImageBackground from "../../assets/header-home.png";
-import FooterImageBackground from "../../assets/footer-home.png";
 
 export const HomeContainer = styled.div`
     min-height:100vh;
@@ -56,23 +55,4 @@ export const HomeButtons = styled.div`
     gap:32px;
     margin-top:32px;
     align-items:center;
-`;
-
-export const HomeFooter = styled.footer`
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    background-image:url(${FooterImageBackground});
-    background-size:cover;
-    background-position:top;
-    width:100%;
-    padding:16px;
-    box-sizing:border-box;
-    flex-direction:column;
-    min-height:5rem;
-    a{
-        font-size:12px;
-        color: #1B1B1B;
-    }
-    
 `;

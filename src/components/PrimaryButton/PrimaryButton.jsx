@@ -14,6 +14,7 @@ const PrimaryButton = styled.button`
     transition: transform 0.2s ease, box-shadow 0.2s ease;
     display:flex;
     align-items:center;
+    justify-content:center;
     gap:8px;
     &:hover{
         transform: scale(1.05);
