@@ -5,6 +5,7 @@ import {
 } from "react-router-dom";
 import HomePage from "../pages/Home/Home";
 import Themes from "../pages/Themes/Themes";
+import Question from "../pages/Question/Question";
 
 const MainRouter = () => {
     return (
@@ -12,7 +13,7 @@ const MainRouter = () => {
             <Routes>
                 <Route path="/" element={<HomePage/>} />
                 <Route path="/temas" element={<Themes/>} />
-                <Route path="/pergunta" element={<h1>Pergunta</h1>} />
+                <Route path="/pergunta" element={<Question/>} />
             </Routes>
         </Router>
     );    

@@ -8,7 +8,6 @@ import {
     CardContainer
 } from "./styles";
 import Footer from "../../components/PrimaryFooter/PrimaryFooter";
-import PrimaryButton from "../../components/PrimaryButton/PrimaryButton";
 import Logo from "../../assets/logo.svg";
 import MascotBlue from "../../assets/mascot-blue.svg";
 import { useState } from "react";

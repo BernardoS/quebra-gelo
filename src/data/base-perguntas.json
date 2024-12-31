@@ -118,5 +118,95 @@
             "criatividade"
         ],
         "assunto": "Se pudesse inventar uma nova tradição para celebrar uma data especial, como ela seria?"
+    },
+    {
+        "categoria": [
+            "preferência"
+        ],
+        "assunto": "Se você pudesse ser um super-herói ou vilão, qual seria o seu nome e qual seria o seu poder mais inútil?"
+    },
+    {
+        "categoria": [
+            "e se..."
+        ],
+        "assunto": "O que você faria se ficasse preso em um videogame por um dia inteiro?"
+    },
+    {
+        "categoria": [
+            "curiosidade"
+        ],
+        "assunto": "Se você pudesse ser qualquer animal por 24 horas, qual escolheria e o que faria?"
+    },
+    {
+        "categoria": [
+            "reflexão"
+        ],
+        "assunto": "Qual foi a coisa mais estranha ou engraçada que já te aconteceu em público?"
+    },
+    {
+        "categoria": [
+            "criatividade"
+        ],
+        "assunto": "Se pudesse inventar um novo sabor de sorvete, qual seria?"
+    },
+    {
+        "categoria": [
+            "opinião"
+        ],
+        "assunto": "Qual personagem de desenho animado você acha que seria o melhor amigo na vida real?"
+    },
+    {
+        "categoria": [
+            "futuro"
+        ],
+        "assunto": "Se robôs fizessem tudo por você, qual seria a única coisa que você ainda gostaria de fazer sozinho?"
+    },
+    {
+        "categoria": [
+            "e se..."
+        ],
+        "assunto": "O que você faria se pudesse falar qualquer idioma instantaneamente, mas apenas por uma hora?"
+    },
+    {
+        "categoria": [
+            "preferência"
+        ],
+        "assunto": "Se pudesse comer apenas um tipo de comida pelo resto da vida, qual seria e por quê?"
+    },
+    {
+        "categoria": [
+            "criatividade"
+        ],
+        "assunto": "Se sua vida fosse transformada em um reality show, qual seria o nome?"
+    },
+    {
+        "categoria": [
+            "curiosidade"
+        ],
+        "assunto": "Se você pudesse ter uma planta que te desse qualquer tipo de alimento instantaneamente, qual seria?"
+    },
+    {
+        "categoria": [
+            "e se..."
+        ],
+        "assunto": "O que você faria se acordasse e percebesse que virou um meme famoso na internet?"
+    },
+    {
+        "categoria": [
+            "reflexão"
+        ],
+        "assunto": "Qual foi a coisa mais tola que você acreditava quando era criança?"
+    },
+    {
+        "categoria": [
+            "preferência"
+        ],
+        "assunto": "Se pudesse escolher entre voar ou ser invisível, qual escolheria e por quê?"
+    },
+    {
+        "categoria": [
+            "criatividade"
+        ],
+        "assunto": "Se você tivesse que criar um esporte novo, como ele seria e quais seriam as regras principais?"
     }
 ]

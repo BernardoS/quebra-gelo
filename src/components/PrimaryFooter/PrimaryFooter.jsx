@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import FooterImageBackground from "../../assets/footer-home.png";
+import FooterImageBackground from "../../assets/footer-blue.png";
 
 const Footer = styled.footer`
     display:flex;

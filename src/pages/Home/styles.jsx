@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import HeaderImageBackground from "../../assets/header-home.png";
+import HeaderImageBackground from "../../assets/header-blue.png";
 
 export const HomeContainer = styled.div`
     min-height:100vh;
