@@ -1,11 +1,13 @@
-import { useState } from 'react'
 import './App.css'
 import MainRouter from './routes/MainRouter'
+import { QuestionsProvider } from './context/QuestionsContext'
 
 function App() {
 
   return (
-    <MainRouter/>
+    <QuestionsProvider>
+      <MainRouter />
+    </QuestionsProvider>
   )
 }
 
