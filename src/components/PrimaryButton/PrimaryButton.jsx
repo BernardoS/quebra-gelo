@@ -19,7 +19,6 @@ const PrimaryButton = styled.button`
     &:hover{
         transform: scale(1.05) rotate(-2deg);
         box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-        rotate:
     }
 `;
 

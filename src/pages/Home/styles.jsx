@@ -9,7 +9,7 @@ export const HomeContainer = styled.div`
     gap:32px;
 `;
 
-export const HeaderHome  = styled.header`
+export const HeaderHome = styled.header`
     display:flex;
     align-items:center;
     justify-content:center;
@@ -25,6 +25,11 @@ export const HeaderHome  = styled.header`
 export const HeaderImage = styled.img`
     max-width:462px;
     width:15%;
+    transition: transform 0.2s ease;
+    &:hover{
+        transform: scale(1.05);
+    }
+
 `;
 
 export const HeaderSubtitle = styled.h2`

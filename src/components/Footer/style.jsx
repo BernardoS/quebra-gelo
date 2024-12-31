@@ -36,4 +36,13 @@ export const SecondaryFooter = styled.footer`
         font-size:12px;
         color: #1B1B1B;
     }
+    img{
+        max-width:330px;
+        width:20%;
+        margin-top:-10%;
+    }
+    &:has(img){
+        margin-top:10%;
+    }
+
 `;

@@ -33,7 +33,7 @@ const Themes = () => {
 
     return (
         <ThemesContainer>
-            <HeaderThemes>
+            <HeaderThemes onClick={() => navigate("/")}>
                 <HeaderImage aria-label="Quebra Gelo" alt="Logo do Quebra Gelo" src={Logo} />
                 <HomeMascotImage alt="um cubo de gelo ilustrado" aria-label="mascote do quebra gelo" src={MascotBlue} />
             </HeaderThemes>
