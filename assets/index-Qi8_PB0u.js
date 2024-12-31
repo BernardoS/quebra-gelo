@@ -57,8 +57,7 @@ Please change the parent <Route path="${$}"> to <Route path="${$==="/"?"*":`${$}
     gap:32px;
 
     @media ${Ke.tablet} {
-       height:100vh;
-       overflow:hidden;
+       min-height:100vh;
     }
 `,T1=me.header`
     display:flex;
@@ -139,10 +138,9 @@ Please change the parent <Route path="${$}"> to <Route path="${$==="/"?"*":`${$}
     @media ${Ke.tablet} {
         &.home{
             background-image:url(${$1});
-            position: absolute;
-            bottom: 0;
+            height: 20rem;
+            margin-top: -20rem;
             z-index: -1;
-            height: 40%;
             justify-content:flex-end;
         }
         
