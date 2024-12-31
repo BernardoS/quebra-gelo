@@ -74,7 +74,7 @@ Please change the parent <Route path="${$}"> to <Route path="${$==="/"?"*":`${$}
     
     @media ${Ke.tablet} {
        background-image:url(${N1});
-       padding-top:30%;
+       padding-top:20%;
     }
 `,z1=me.img`
     max-width:462px;
@@ -334,9 +334,9 @@ Please change the parent <Route path="${$}"> to <Route path="${$==="/"?"*":`${$}
     color: #1B1B1B;
     text-transform:capitalize;
 `,lg=me.p`
-    font-size:12px;
+    font-size:1rem;
     color: #1B1B1B;
-    font-weight:200;
+    font-weight:600;
     line-height:2;
 `,Kd=({title:o,description:u,onClickHandler:a})=>H.jsxs(rg,{onClick:a,children:[H.jsx(og,{children:o}),H.jsx(lg,{children:u})]});Kd.propTypes={title:jn.string.isRequired,description:jn.string.isRequired,onClickHandler:jn.func.isRequired};const Gd=P.createContext(),qd=({children:o})=>{const[u,a]=P.useState([]),[s,f]=P.useState([]),d=async g=>{const w=g,_=g.map(T=>T.categoria).flat(),N=[...new Set(_)];let E=[];N.forEach(T=>{let R=w.filter(O=>O.categoria.includes(T))[0];E.push({title:T,description:R==null?void 0:R.assunto})}),a(E)},m=async g=>{f(g)},S=async()=>{try{const w=await(await fetch("/quebra-gelo/data/base-perguntas.json")).json();await m(w),await d(w)}catch(g){console.error("Erro ao carregar perguntas:",g)}};return P.useEffect(()=>{S()},[]),H.jsx(Gd.Provider,{value:{themes:u,questions:s},children:o})};qd.propTypes={children:jn.element};const Xd=()=>{const o=P.useContext(Gd);if(!o)throw new Error("useQuestions deve ser usado dentro de QuestionsProvider");return o},ig=()=>{const[o,u]=P.useState([]),{themes:a}=Xd(),s=po();return P.useEffect(()=>{u(a),console.log(a)},[a]),H.jsxs(X1,{children:[H.jsxs(J1,{onClick:()=>s("/quebra-gelo"),children:[H.jsx(Z1,{"aria-label":"Quebra Gelo",alt:"Logo do Quebra Gelo",src:_a}),H.jsx(b1,{alt:"um cubo de gelo ilustrado","aria-label":"mascote do quebra gelo",src:Hl})]}),H.jsxs(eg,{children:[H.jsxs(tg,{children:["Escolha um tema para ",H.jsx("br",{})," conversar"]}),H.jsx(ng,{children:o.map(f=>H.jsx(Kd,{onClickHandler:()=>s(`/quebra-gelo/pergunta?tema=${f.title}`),title:f.title,description:f.description},f.title))})]}),H.jsx(Jl,{version:"primary"})]})},ug="/quebra-gelo/assets/header-yellow-DlJzIqNY.png",ag=me.div`
     min-height:100vh;
