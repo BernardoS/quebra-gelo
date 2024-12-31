@@ -1,8 +1,9 @@
 import styled from "styled-components";
 
-export const Card = styled.div`
+export const Card = styled.button`
+    text-align: left;
     aspect-ratio:300/90;
-    width:25%;
+    width:30%;
     padding:8px 16px;
     border:2px solid #1B1B1B;
     background-color:#FFF;

@@ -13,6 +13,7 @@ import Logo from "../../assets/logo.svg";
 import MascotBlue from "../../assets/mascot-blue.svg";
 import { useState } from "react";
 import ThemeCard from "../../components/ThemeCard/ThemeCard";
+import { useNavigate } from "react-router-dom";
 
 
 const Themes = () => {
@@ -25,12 +26,10 @@ const Themes = () => {
         , {
             title: "futuro",
             description: "Se pudesse viver em qualquer época, passada ou futura, qual escolheria?"
-        },
-        {
-            title: "futuro",
-            description: "Se pudesse viver em qualquer época, passada ou futura, qual escolheria?"
         }
     ]);
+
+    const navigate = useNavigate();
 
 
     return (
@@ -46,11 +45,10 @@ const Themes = () => {
 
                 <CardContainer>
                     {themes.map((theme) => (
-                        <ThemeCard key={theme.title} title={theme.title} description={theme.description} />
+                        <ThemeCard key={theme.title} onClickHandler={() => navigate(`/pergunta?tema=${theme.title}`)} title={theme.title} description={theme.description} />
                     ))}
                 </CardContainer>
-
-                <PrimaryButton>Ver mais</PrimaryButton>
+                
 
             </ThemesBody>
             <Footer>
