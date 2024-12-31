@@ -12,6 +12,7 @@ const MainRouter = () => {
         <Router>
             <Routes>
                 <Route path="/" element={<HomePage/>} />
+                <Route path="*" element={<HomePage/>} />
                 <Route path="/temas" element={<Themes/>} />
                 <Route path="/pergunta" element={<Question/>} />
             </Routes>

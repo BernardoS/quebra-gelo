@@ -82,10 +82,10 @@ export const HomeButtons = styled.div`
     display:flex;
     gap:16px;
     margin-top:32px;
-    margin-bottom:20%;
     align-items:center;
 
      @media ${device.tablet} {
        flex-direction:column;
+       margin-bottom:20%;
     }
 `;
