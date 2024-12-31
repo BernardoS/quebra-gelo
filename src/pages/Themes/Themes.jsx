@@ -10,25 +10,24 @@ import {
 import Footer from "../../components/Footer/Footer";
 import Logo from "../../assets/logo.svg";
 import MascotBlue from "../../assets/mascot-blue.svg";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import ThemeCard from "../../components/ThemeCard/ThemeCard";
 import { useNavigate } from "react-router-dom";
+import { useQuestions } from "../../context/QuestionsContext";
 
 
 const Themes = () => {
 
-    const [themes, setThemes] = useState([
-        {
-            title: "preferência",
-            description: "Se pudesse escolher uma habilidade para dominar instantaneamente, qual seria?"
-        }
-        , {
-            title: "futuro",
-            description: "Se pudesse viver em qualquer época, passada ou futura, qual escolheria?"
-        }
-    ]);
+    const [themeList, setThemeList] = useState([]);
+
+    const {themes} = useQuestions();
 
     const navigate = useNavigate();
+
+    useEffect(()=>{
+        setThemeList(themes);
+        console.log(themes);
+    },[themes]);
 
 
     return (
@@ -43,7 +42,7 @@ const Themes = () => {
                 </ThemesTitle>
 
                 <CardContainer>
-                    {themes.map((theme) => (
+                    {themeList.map((theme) => (
                         <ThemeCard key={theme.title} onClickHandler={() => navigate(`/pergunta?tema=${theme.title}`)} title={theme.title} description={theme.description} />
                     ))}
                 </CardContainer>

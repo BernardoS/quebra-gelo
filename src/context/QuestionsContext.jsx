@@ -11,7 +11,19 @@ export const QuestionsProvider = ({ children }) => {
     const loadThemes = (data) => {
         const categorias = data.map(pergunta => pergunta.categoria).flat();
         const categoriasUnicas = [...new Set(categorias)];
-        setThemes(categoriasUnicas);
+        let themeList = [];
+
+        categoriasUnicas.forEach(categoriaUnica => {
+            let primeiraPergunta = questions.filter((question)=>question.categoria.includes(categoriaUnica))[0];
+            
+            themeList.push({
+                title: categoriaUnica,
+                description:primeiraPergunta?.assunto
+            })
+
+        });
+        
+        setThemes(themeList);
     }
 
     const loadQuestions = (data) =>{

@@ -56,5 +56,6 @@ export const CardContainer = styled.div`
     justify-content: space-between;
     width:80%;
     column-gap:1%;
+    row-gap:32px;
     margin:32px 0px;
 `;
