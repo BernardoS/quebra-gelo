@@ -21,12 +21,15 @@ export const PrimaryFooter = styled.footer`
         color: #1B1B1B;
     }
     @media ${device.tablet} {
-        background-image:url(${FooterBlueImageMobileBackground});
-        position: absolute;
-        bottom: 0;
-        z-index: -1;
-        height: 40%;
-        justify-content:flex-end;
+        &.home{
+            background-image:url(${FooterBlueImageMobileBackground});
+            position: absolute;
+            bottom: 0;
+            z-index: -1;
+            height: 40%;
+            justify-content:flex-end;
+        }
+        
     }
 
 `;

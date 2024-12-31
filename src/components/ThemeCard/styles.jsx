@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { device } from "../../layoutBreakpoints";
 
 export const Card = styled.button`
     text-align: left;
@@ -15,6 +16,9 @@ export const Card = styled.button`
     cursor:pointer;
     &:hover{
         transform: scale(1.05);
+    }
+    @media ${device.tablet} {
+        width:85%;
     }
 `;
 

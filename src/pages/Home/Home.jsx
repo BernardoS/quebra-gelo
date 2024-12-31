@@ -44,7 +44,7 @@ const HomePage = () => {
                     </SecondaryButton>
                 </HomeButtons>
             </HomeBody>
-            <Footer version="primary"/>
+            <Footer isHome={true} version="primary"/>
         </HomeContainer>
 
 

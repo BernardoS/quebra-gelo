@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import HeaderImageBackground from "../../assets/header-blue.png";
+import { device } from "../../layoutBreakpoints";
 
 export const ThemesContainer = styled.div`
     min-height:100vh;
@@ -30,11 +31,18 @@ export const HeaderImage = styled.img`
     &:hover{
         transform: scale(1.05);
     }
+    @media ${device.tablet} {
+        width:50%;
+        margin:10% 0%;
+    }
 `;
 
 export const HomeMascotImage = styled.img`
     max-width:96px;
     width:15%;
+    @media ${device.tablet} {
+        display:none;
+    }
 `;
 
 export const ThemesBody = styled.div`
@@ -48,6 +56,9 @@ export const ThemesTitle = styled.h1`
     color:#1B1B1B;
     margin:unset;
     text-align:center;
+    @media ${device.tablet} {
+        font-size:20px;
+    }
 `;
 
 export const CardContainer = styled.div`
@@ -58,4 +69,11 @@ export const CardContainer = styled.div`
     column-gap:1%;
     row-gap:32px;
     margin:32px 0px;
+
+    @media ${device.tablet} {
+        flex-direction:column;
+        justify-content: center;
+        align-items:center;
+        font-size:20px;
+    }
 `;
