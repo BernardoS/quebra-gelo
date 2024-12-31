@@ -7,7 +7,7 @@ import {
     ThemesTitle,
     CardContainer
 } from "./styles";
-import Footer from "../../components/PrimaryFooter/PrimaryFooter";
+import Footer from "../../components/Footer/Footer";
 import Logo from "../../assets/logo.svg";
 import MascotBlue from "../../assets/mascot-blue.svg";
 import { useState } from "react";
@@ -50,9 +50,7 @@ const Themes = () => {
                 
 
             </ThemesBody>
-            <Footer>
-                <a href="https://github.com/BernardoS">Developed by BernardoS</a>
-            </Footer>
+            <Footer version="primary"/>
         </ThemesContainer>
     );
 }

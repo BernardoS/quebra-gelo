@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react";
 import { useSearchParams } from "react-router-dom";
+import Footer from "../../components/Footer/Footer";
+import { QuestionContainer } from "./styles";
 
 
 const Question = () => { 
@@ -21,10 +23,11 @@ const Question = () => {
     },[])
 
     return(
-        <div>
-            <h1>Teste</h1>
+        <QuestionContainer>
+            
             <h1>{theme}</h1>
-        </div>
+            <Footer version="secondary"/>
+        </QuestionContainer>
     )
 }
 
