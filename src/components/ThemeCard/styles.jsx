@@ -29,8 +29,8 @@ export const CardTitle = styled.h3`
 `;
 
 export const CardSubtitle = styled.p`
-    font-size:12px;
+    font-size:1rem;
     color: #1B1B1B;
-    font-weight:200;
+    font-weight:600;
     line-height:2;
 `;

@@ -30,7 +30,7 @@ export const HeaderHome = styled.header`
     
     @media ${device.tablet} {
        background-image:url(${HeaderImageMobileBackground});
-       padding-top:30%;
+       padding-top:20%;
     }
 `;
 
