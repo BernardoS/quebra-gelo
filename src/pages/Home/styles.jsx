@@ -1,5 +1,7 @@
 import styled from "styled-components";
 import HeaderImageBackground from "../../assets/header-blue.png";
+import HeaderImageMobileBackground from "../../assets/header-mobile-blue.png";
+import { device } from "../../layoutBreakpoints";
 
 export const HomeContainer = styled.div`
     min-height:100vh;
@@ -7,6 +9,11 @@ export const HomeContainer = styled.div`
     flex-direction: column;
     justify-content: space-between;
     gap:32px;
+
+    @media ${device.tablet} {
+       height:100vh;
+       overflow:hidden;
+    }
 `;
 
 export const HeaderHome = styled.header`
@@ -20,6 +27,11 @@ export const HeaderHome = styled.header`
     padding:8px;
     box-sizing:border-box;
     flex-direction:column;
+    
+    @media ${device.tablet} {
+       background-image:url(${HeaderImageMobileBackground});
+       padding-top:30%;
+    }
 `;
 
 export const HeaderImage = styled.img`
@@ -30,11 +42,18 @@ export const HeaderImage = styled.img`
         transform: scale(1.05);
     }
 
+    @media ${device.tablet} {
+       width:85%;
+    }
+
 `;
 
 export const HeaderSubtitle = styled.h2`
   font-size:1.2rem;
   font-weight:800;  
+   @media ${device.tablet} {
+       display:none;
+    }
 `;
 
 export const HomeBody = styled.div`
@@ -48,6 +67,10 @@ export const HomeBody = styled.div`
 export const HomeMascotImage = styled.img`
     max-width:300px;
     width:20%;
+    @media ${device.tablet} {
+       width:80%;
+       margin-top:-15%;
+    }
 `;
 
 export const HomeSpan = styled.span`
@@ -57,7 +80,12 @@ export const HomeSpan = styled.span`
 
 export const HomeButtons = styled.div`
     display:flex;
-    gap:32px;
+    gap:16px;
     margin-top:32px;
+    margin-bottom:20%;
     align-items:center;
+
+     @media ${device.tablet} {
+       flex-direction:column;
+    }
 `;

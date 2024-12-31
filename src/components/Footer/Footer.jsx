@@ -3,10 +3,10 @@ import MascotBlue from "../../assets/mascot-blue.svg";
 import MascotYellow from "../../assets/mascot-yellow.svg";
 import PropTypes from "prop-types";
 
-const Footer = ({ version, withMascot }) => {
+const Footer = ({ version, withMascot, isHome }) => {
 
     let component = (
-        <PrimaryFooter>
+        <PrimaryFooter className={isHome?"home":""}>
             {withMascot && (
                 <img alt="Mascote do site" aria-label="Cubo de gelo sorridente com luvas azuis" src={MascotBlue} />
             )}
@@ -27,7 +27,7 @@ const Footer = ({ version, withMascot }) => {
             break;
         case "primary":
             component = (
-                <PrimaryFooter>
+                <PrimaryFooter className={isHome?"home":""}>
                     {withMascot && (
                         <img alt="Mascote do site" aria-label="Cubo de gelo sorridente com luvas azuis" src={MascotBlue} />
                     )}
@@ -43,7 +43,8 @@ const Footer = ({ version, withMascot }) => {
 
 Footer.propTypes = {
     version: PropTypes.string.isRequired,
-    withMascot: PropTypes.bool
+    withMascot: PropTypes.bool,
+    isHome: PropTypes.bool
 }
 
 export default Footer;
