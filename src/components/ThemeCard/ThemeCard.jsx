@@ -5,9 +5,9 @@ import {
     CardSubtitle
 } from "./styles";
 
-const ThemeCard = ({ title, description }) => {
+const ThemeCard = ({ title, description, onClickHandler }) => {
     return (
-        <Card>
+        <Card onClick={onClickHandler} >
             <CardTitle>{title}</CardTitle>
             <CardSubtitle>{description}</CardSubtitle>
         </Card>
@@ -16,7 +16,8 @@ const ThemeCard = ({ title, description }) => {
 
 ThemeCard.propTypes = {
     title: PropTypes.string.isRequired,
-    description: PropTypes.string.isRequired
+    description: PropTypes.string.isRequired,
+    onClickHandler: PropTypes.func.isRequired
 }
 
 export default ThemeCard;
