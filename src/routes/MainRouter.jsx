@@ -11,10 +11,10 @@ const MainRouter = () => {
     return (
         <Router>
             <Routes>
-                <Route path="/" element={<HomePage/>} />
                 <Route path="*" element={<HomePage/>} />
-                <Route path="/temas" element={<Themes/>} />
-                <Route path="/pergunta" element={<Question/>} />
+                <Route path="/quebra-gelo" element={<HomePage/>} />
+                <Route path="/quebra-gelo/temas" element={<Themes/>} />
+                <Route path="/quebra-gelo/pergunta" element={<Question/>} />
             </Routes>
         </Router>
     );    
