@@ -44,4 +44,11 @@ export const QuestionBody = styled.div`
     width:50%;
     align-self:center;
     text-align:center;
+    h2{
+        margin:unset;
+    }
+    h2.question{
+        margin-bottom:32px;
+    }
+    
 `;

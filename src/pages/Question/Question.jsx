@@ -1,18 +1,19 @@
 import { useEffect, useState } from "react";
 import { useNavigate, useSearchParams } from "react-router-dom";
 import Footer from "../../components/Footer/Footer";
-import { 
+import {
     QuestionContainer,
     HeaderQuestion,
     HeaderImage,
     HeaderSubtitle,
     QuestionBody
- } from "./styles";
+} from "./styles";
 import Logo from "../../assets/logo.svg";
 import PrimaryButton from "../../components/PrimaryButton/PrimaryButton";
-import { 
-    Exchange01Icon 
- } from "hugeicons-react";
+import {
+    Exchange01Icon
+} from "hugeicons-react";
+import { useQuestions } from "../../context/QuestionsContext";
 
 
 
@@ -20,21 +21,33 @@ const Question = () => {
 
     const navigate = useNavigate();
 
+    const { questions } = useQuestions();
+
     const [searchParams] = useSearchParams();
 
-    const [theme, setTheme] = useState("");
+    const [selectedQuestion, setSelectedQuestion] = useState({});
 
     useEffect(() => {
+        getRandomQuestion();
+    }, [questions, searchParams]);
 
-        let themeParam = searchParams.get("tema");
 
-        if (themeParam != null && themeParam != undefined && themeParam != "") {
+    function getRandomQuestion() {
+        let questionList = questions;
 
-            setTheme(themeParam);
+        const searchTheme = searchParams.get("tema");
 
+        if (searchTheme) {
+            questionList = questions.filter(question =>
+                question.categoria.some(theme => theme == searchTheme) && question != selectedQuestion
+            );
         }
 
-    }, []);
+        const randomIndex = Math.floor(Math.random() * questionList.length);
+        const question = questionList[randomIndex];
+        console.log(questionList);
+        setSelectedQuestion(question);
+    }
 
     return (
         <QuestionContainer>
@@ -43,13 +56,25 @@ const Question = () => {
                 <HeaderSubtitle>Me conta aí</HeaderSubtitle>
             </HeaderQuestion>
             <QuestionBody>
-                <h2>O que você perguntaria para seu filho  se pudesse encontrá-lo hoje com a sua mesma idade?</h2>
-                <PrimaryButton>
-                    <Exchange01Icon  strokeWidth={2} />
-                    Outro assunto
-                </PrimaryButton>
+                {selectedQuestion != null ? (
+                    <>
+                        <h2 className="question">{selectedQuestion?.assunto}</h2>
+                        <PrimaryButton onClick={() => getRandomQuestion()}>
+                            <Exchange01Icon strokeWidth={2} />
+                            Outro assunto
+                        </PrimaryButton>
+                    </>
+                ) :
+                    (
+                        <>
+                            <h2>Ih rapaz... <br /></h2>
+                            <p> Parece que teve um problema ao recuperar o assunto. Que tal voltar para a página inicial e tentar novamente?</p>
+                        </>
+                    )}
+
+
             </QuestionBody>
-            <Footer version="secondary" withMascot={true}/>
+            <Footer version="secondary" withMascot={true} />
         </QuestionContainer>
     )
 }

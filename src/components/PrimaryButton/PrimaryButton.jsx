@@ -17,8 +17,13 @@ const PrimaryButton = styled.button`
     justify-content:center;
     gap:8px;
     &:hover{
-        transform: scale(1.05) rotate(-2deg);
+        transform: scale(1.05) rotate(-1deg);
         box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    }
+    &:active{
+        transform: scale(1);
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        background-color:#fcc11c;
     }
 `;
 
