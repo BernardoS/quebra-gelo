@@ -1,7 +1,7 @@
 import styled from "styled-components";
-import HeaderImageBackground from "../../assets/header-blue.png";
+import HeaderImageBackground from "../../assets/header-yellow.png";
 
-export const HomeContainer = styled.div`
+export const QuestionContainer = styled.div`
     min-height:100vh;
     display: flex;
     flex-direction: column;
@@ -9,7 +9,7 @@ export const HomeContainer = styled.div`
     gap:32px;
 `;
 
-export const HeaderHome = styled.header`
+export const HeaderQuestion  = styled.header`
     display:flex;
     align-items:center;
     justify-content:center;
@@ -20,6 +20,7 @@ export const HeaderHome = styled.header`
     padding:8px;
     box-sizing:border-box;
     flex-direction:column;
+    cursor:pointer;
 `;
 
 export const HeaderImage = styled.img`
@@ -29,7 +30,6 @@ export const HeaderImage = styled.img`
     &:hover{
         transform: scale(1.05);
     }
-
 `;
 
 export const HeaderSubtitle = styled.h2`
@@ -37,27 +37,11 @@ export const HeaderSubtitle = styled.h2`
   font-weight:800;  
 `;
 
-export const HomeBody = styled.div`
+export const QuestionBody = styled.div`
     display:flex;
-    align-items:center;
-    justify-content:center;
     flex-direction:column;
-    margin-bottom:16px;
-`;
-
-export const HomeMascotImage = styled.img`
-    max-width:300px;
-    width:20%;
-`;
-
-export const HomeSpan = styled.span`
-    font-size:1rem;
-    font-weight:700;  
-`;
-
-export const HomeButtons = styled.div`
-    display:flex;
-    gap:32px;
-    margin-top:32px;
     align-items:center;
+    width:50%;
+    align-self:center;
+    text-align:center;
 `;

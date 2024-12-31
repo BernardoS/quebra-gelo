@@ -8,7 +8,7 @@ import {
     HomeButtons,
     HomeContainer
 } from "./styles";
-import Footer from "../../components/PrimaryFooter/PrimaryFooter";
+import Footer from "../../components/Footer/Footer";
 import Logo from "../../assets/logo.svg";
 import MascotBlue from "../../assets/mascot-blue.svg";
 import PrimaryButton from "../../components/PrimaryButton/PrimaryButton";
@@ -30,23 +30,21 @@ const HomePage = () => {
                 <HeaderSubtitle>Para você não ficar mais sem assunto</HeaderSubtitle>
             </HeaderHome>
             <HomeBody>
-                <HomeMascotImage alt="um cubo de gelo ilustrado" aria-label="mascote do quebra gelo" src={MascotBlue} />
+                <HomeMascotImage  alt="um cubo de gelo ilustrado" aria-label="Cubo de gelo sorridente com luvas azuis" src={MascotBlue} />
                 <HomeSpan>Escolhe aí</HomeSpan>
                 <HomeButtons>
-                    <PrimaryButton type="button">
+                    <PrimaryButton onClick={() => navigate("/pergunta")} type="button">
                         <Idea01Icon  strokeWidth={2} />
                         Puxar Assunto
                     </PrimaryButton>
                     <HomeSpan> ou </HomeSpan>
                     <SecondaryButton onClick={() => navigate("/temas")} type="button">
-                        <StickyNote02Icon strokeWidth={2} stroke="2"/>
+                        <StickyNote02Icon strokeWidth={2}/>
                         Escolher Tema
                     </SecondaryButton>
                 </HomeButtons>
             </HomeBody>
-            <Footer>
-                <a href="https://github.com/BernardoS">Developed by BernardoS</a>
-            </Footer>
+            <Footer version="primary"/>
         </HomeContainer>
 
 
