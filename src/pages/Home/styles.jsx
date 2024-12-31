@@ -11,8 +11,7 @@ export const HomeContainer = styled.div`
     gap:32px;
 
     @media ${device.tablet} {
-       height:100vh;
-       overflow:hidden;
+       min-height:100vh;
     }
 `;
 

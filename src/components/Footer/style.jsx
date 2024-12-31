@@ -23,10 +23,9 @@ export const PrimaryFooter = styled.footer`
     @media ${device.tablet} {
         &.home{
             background-image:url(${FooterBlueImageMobileBackground});
-            position: absolute;
-            bottom: 0;
+            height: 20rem;
+            margin-top: -20rem;
             z-index: -1;
-            height: 40%;
             justify-content:flex-end;
         }
         
