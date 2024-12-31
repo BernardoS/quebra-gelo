@@ -20,7 +20,7 @@ const SecondaryButton = styled.button`
         box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
     }
     &:active{
-        transform: scale(1);
+        transform: scale(1.08) rotate(-1deg);
         box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
         background-color:#fadf7f;
     }

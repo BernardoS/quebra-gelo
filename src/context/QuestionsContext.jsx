@@ -8,13 +8,15 @@ export const QuestionsProvider = ({ children }) => {
     const [themes, setThemes] = useState([]);
     const [questions, setQuestions] = useState([]);
 
-    const loadThemes = (data) => {
+    const loadThemes = async (data) => {
+        const questionList = data;
         const categorias = data.map(pergunta => pergunta.categoria).flat();
         const categoriasUnicas = [...new Set(categorias)];
+
         let themeList = [];
 
         categoriasUnicas.forEach(categoriaUnica => {
-            let primeiraPergunta = questions.filter((question)=>question.categoria.includes(categoriaUnica))[0];
+            let primeiraPergunta =  questionList.filter((question)=>question.categoria.includes(categoriaUnica))[0];
             
             themeList.push({
                 title: categoriaUnica,
@@ -26,7 +28,7 @@ export const QuestionsProvider = ({ children }) => {
         setThemes(themeList);
     }
 
-    const loadQuestions = (data) =>{
+    const loadQuestions = async (data) =>{
         setQuestions(data);
     }
 
@@ -35,8 +37,8 @@ export const QuestionsProvider = ({ children }) => {
         try {
             const response = await fetch("/data/base-perguntas.json");
             const data = await response.json();
-            loadThemes(data);
-            loadQuestions(data);
+            await loadQuestions(data);
+            await loadThemes(data);
         } catch (error) {
             console.error("Erro ao carregar perguntas:", error);
         }

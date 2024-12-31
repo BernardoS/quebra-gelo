@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import HeaderImageBackground from "../../assets/header-yellow.png";
+import { device } from "../../layoutBreakpoints";
 
 export const QuestionContainer = styled.div`
     min-height:100vh;
@@ -30,11 +31,18 @@ export const HeaderImage = styled.img`
     &:hover{
         transform: scale(1.05);
     }
+    @media ${device.tablet} {
+        width:50%;
+        margin:10% 0%;
+    }
 `;
 
 export const HeaderSubtitle = styled.h2`
   font-size:1.2rem;
   font-weight:800;  
+  @media ${device.tablet} {
+    display:none;
+    }
 `;
 
 export const QuestionBody = styled.div`
@@ -50,5 +58,7 @@ export const QuestionBody = styled.div`
     h2.question{
         margin-bottom:32px;
     }
-    
+     @media ${device.tablet} {
+        width:70%;
+    }
 `;

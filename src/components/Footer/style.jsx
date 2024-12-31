@@ -58,5 +58,13 @@ export const SecondaryFooter = styled.footer`
     &:has(img){
         margin-top:10%;
     }
+    @media ${device.tablet} {
+        img{
+            max-width:330px;
+            width:50%;
+            margin-top:-30%;
+        }
+        
+    }
 
 `;
