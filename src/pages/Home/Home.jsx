@@ -33,12 +33,12 @@ const HomePage = () => {
                 <HomeMascotImage  alt="um cubo de gelo ilustrado" aria-label="Cubo de gelo sorridente com luvas azuis" src={MascotBlue} />
                 <HomeSpan>Escolhe aí</HomeSpan>
                 <HomeButtons>
-                    <PrimaryButton onClick={() => navigate("/pergunta")} type="button">
+                    <PrimaryButton onClick={() => navigate("/quebra-gelo/pergunta")} type="button">
                         <Idea01Icon  strokeWidth={2} />
                         Puxar Assunto
                     </PrimaryButton>
                     <HomeSpan> ou </HomeSpan>
-                    <SecondaryButton onClick={() => navigate("/temas")} type="button">
+                    <SecondaryButton onClick={() => navigate("/quebra-gelo/temas")} type="button">
                         <StickyNote02Icon strokeWidth={2}/>
                         Escolher Tema
                     </SecondaryButton>
