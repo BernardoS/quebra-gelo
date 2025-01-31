@@ -32,7 +32,7 @@ const Themes = () => {
 
     return (
         <ThemesContainer>
-            <HeaderThemes onClick={() => navigate("/quebra-gelo")}>
+            <HeaderThemes onClick={() => navigate("/")}>
                 <HeaderImage aria-label="Quebra Gelo" alt="Logo do Quebra Gelo" src={Logo} />
                 <HomeMascotImage alt="um cubo de gelo ilustrado" aria-label="mascote do quebra gelo" src={MascotBlue} />
             </HeaderThemes>
@@ -43,7 +43,7 @@ const Themes = () => {
 
                 <CardContainer>
                     {themeList.map((theme) => (
-                        <ThemeCard key={theme.title} onClickHandler={() => navigate(`/quebra-gelo/pergunta?tema=${theme.title}`)} title={theme.title} description={theme.description} />
+                        <ThemeCard key={theme.title} onClickHandler={() => navigate(`/pergunta?tema=${theme.title}`)} title={theme.title} description={theme.description} />
                     ))}
                 </CardContainer>
                 

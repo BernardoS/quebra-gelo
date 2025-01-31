@@ -1,14 +1,13 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <title>Quebra Gelo - 404 - Página não encontrada</title>
     <script type="text/javascript">
       //Achei essa solução disponível no github e não mexi no comentário abaixo para
       //consultas posteriores de quem precisar
       //Então os créditos dessa feature, é desse repositório abaixo:
       //https://github.com/rafgraph/spa-github-pages
-        
 
       // Single Page Apps for GitHub Pages
       // MIT License
@@ -31,18 +30,29 @@
       var pathSegmentsToKeep = 1;
 
       var location = window.location;
-      if(location.toString().includes('github.io')){
-        location.replace(
-          location.protocol + '//' + location.hostname + (location.port ? ':' + location.port : '') +
-          location.pathname.split('/').slice(0, 1 + pathSegmentsToKeep).join('/') + '/?/' +
-          location.pathname.slice(1).split('/').slice(pathSegmentsToKeep).join('/').replace(/&/g, '~and~') +
-          (location.search ? '&' + location.search.slice(1).replace(/&/g, '~and~') : '') +
-          location.hash
-        );
-      }
 
+      location.replace(
+        location.protocol +
+          "//" +
+          location.hostname +
+          (location.port ? ":" + location.port : "") +
+          location.pathname
+            .split("/")
+            .slice(0, 1 + pathSegmentsToKeep)
+            .join("/") +
+          "/?/" +
+          location.pathname
+            .slice(1)
+            .split("/")
+            .slice(pathSegmentsToKeep)
+            .join("/")
+            .replace(/&/g, "~and~") +
+          (location.search
+            ? "&" + location.search.slice(1).replace(/&/g, "~and~")
+            : "") +
+          location.hash
+      );
     </script>
   </head>
-  <body>
-  </body>
+  <body></body>
 </html>

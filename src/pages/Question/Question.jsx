@@ -51,7 +51,7 @@ const Question = () => {
 
     return (
         <QuestionContainer>
-            <HeaderQuestion onClick={() => navigate("/quebra-gelo")}>
+            <HeaderQuestion onClick={() => navigate("/")}>
                 <HeaderImage aria-label="Quebra Gelo" alt="Logo do Quebra Gelo" src={Logo} />
                 <HeaderSubtitle>Me conta aí</HeaderSubtitle>
             </HeaderQuestion>

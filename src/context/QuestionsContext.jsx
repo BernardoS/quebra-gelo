@@ -35,7 +35,7 @@ export const QuestionsProvider = ({ children }) => {
     // Função para carregar perguntas e temas do JSON
     const loadData = async () => {
         try {
-            const response = await fetch("/quebra-gelo/data/base-perguntas.json");
+            const response = await fetch("/data/base-perguntas.json");
             const data = await response.json();
             await loadQuestions(data);
             await loadThemes(data);
