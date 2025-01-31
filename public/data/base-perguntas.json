@@ -3,31 +3,31 @@
         "categoria": [
             "o que você faria ?"
         ],
-        "assunto": "O que você faria se tivesse que escolher entre apenas três profissões para o seu filho: ator, médico ou engenheiro ? Qual escolheria ?"
+        "assunto": "O que você faria se descobrisse que pode viajar no tempo, mas apenas para momentos da sua própria vida?"
     },
     {
         "categoria": [
             "o que você faria ?"
         ],
-        "assunto": "O que você faria se um recém-nascido fosse deixado na sua porta ?"
+        "assunto": "O que você faria se tivesse que sobreviver sozinho em uma ilha deserta por um mês?"
     },
     {
         "categoria": [
             "o que você faria ?"
         ],
-        "assunto": "O que você faria se soubesse que nunca iria envelhecer ?"
+        "assunto": "O que você faria se acordasse com a habilidade de entender e falar com os animais?"
     },
     {
         "categoria": [
             "o que você faria ?"
         ],
-        "assunto": "O que você faria se você se tornasse imortal ?"
+        "assunto": "O que você faria se recebesse um bilhete de loteria premiado por engano?"
     },
     {
         "categoria": [
             "o que você faria ?"
         ],
-        "assunto": "O que você faria se tivesse que escolher apenas cinco livros para ler até o fim da vida ?"
+        "assunto": "O que você faria se tivesse que escolher entre nunca mais usar tecnologia ou nunca mais viajar?"
     },
     {
         "categoria": [
@@ -106,6 +106,24 @@
             "futuro"
         ],
         "assunto": "Qual seria o futuro ideal para a humanidade, em sua opinião?"
+    },
+    {
+        "categoria": [
+            "futuro"
+        ],
+        "assunto": "Se pudesse receber uma mensagem de si mesmo do futuro, o que gostaria que ela dissesse?"
+    },
+    {
+        "categoria": [
+            "futuro"
+        ],
+        "assunto": "Se no futuro fosse possível transferir a consciência para um corpo artificial, você faria isso?"
+    },
+    {
+        "categoria": [
+            "futuro"
+        ],
+        "assunto": "Se pudesse fazer uma única pergunta para alguém do futuro, o que perguntaria?"
     },
     {
         "categoria": [
@@ -208,5 +226,23 @@
             "criatividade"
         ],
         "assunto": "Se você tivesse que criar um esporte novo, como ele seria e quais seriam as regras principais?"
+    },
+    {
+        "categoria": [
+            "criatividade"
+        ],
+        "assunto": "Se tivesse que criar um parque temático baseado em um conceito único, qual seria o tema e suas atrações?"
+    },
+    {
+        "categoria": [
+            "criatividade"
+        ],
+        "assunto": "Se você tivesse que inventar um novo superpoder que ninguém mais tem, qual seria e como funcionaria?"
+    }, 
+    {
+        "categoria": [
+            "criatividade"
+        ],
+        "assunto": "Se você pudesse criar um novo feriado mundial, qual seria o motivo da celebração e como as pessoas comemorariam?"
     }
 ]
